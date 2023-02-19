@@ -3,9 +3,12 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { Typography } from "@mui/material";
+import { useUser } from "@/context/AuthContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const {user} = useUser();
+  console.log('user sign in....', user);
   return (
     <>
       <Head>
