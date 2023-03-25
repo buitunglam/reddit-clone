@@ -8,12 +8,13 @@ type Props = {
 
 const PostPreview = ({ post }: Props): ReactElement => {
   return (
-    <Grid container direction="row" justifyContent="space-between">
+    <Grid container direction="row" justifyContent="space-between" sx={{
+      marginTop: '10px'
+    }}>
       {/* Upvote / votes / downvote */}
       <Grid
         container
         direction="column"
-        spacing={2}
         alignItems="center"
         style={{ maxWidth: 128 }}
       >

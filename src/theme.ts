@@ -14,7 +14,8 @@ const theme = createTheme({
   palette: {
     background: {
       paper: "#1b2330",
-      default: "#0d1218",
+      // default: "#0d1218",
+      default: "#fff",
     },
     primary: {
       main: "rgba(2, 106, 167, 1)",
